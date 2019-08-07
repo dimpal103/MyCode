@@ -1,0 +1,37 @@
+package string;
+
+public class DeleteString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "";
+		System.out.println("String length : "+str.length());
+		
+		String name = "Anamika Kumari";
+		System.out.println("Length of Anamika Kumari : "+name.length());
+		
+		// Q : What will be length of string “123  “ ?
+		String name1 = "123 ";
+		System.out.println("length of 123 : "+name1.length());
+		
+		// toUpperCase
+		String value = "dimpal";
+		System.out.println("To upper case of dimpal : "+value.toUpperCase());
+		
+		// Q : What will be value of toUpperCase of “dimpal.tarwan1” ?
+
+		String value1 = "dimpal.tarwan1";
+		System.out.println("dimpal.tarwan1 in toUpperCase : "+value1.toUpperCase());
+		
+		System.out.println(value1.substring(3));
+		
+		System.out.println(value1.contains("pal"));
+		
+		System.out.println(value1.contains(value));
+		
+		System.out.println(value.contains(value1));
+
+
+	}
+
+}

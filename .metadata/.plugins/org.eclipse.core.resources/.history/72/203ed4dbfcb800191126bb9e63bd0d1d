@@ -1,0 +1,51 @@
+package arraysQ;
+
+import java.util.Arrays;
+
+public class SortStringArrayDate8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String[] str = {"dimpal","ana","chan","chikoo"};
+		
+		String v1 = "";
+		for (int i1=0;i1<str.length;i1++) {
+			for (int j1 = i1+1;j1<str.length;j1++) {
+				int max = 0;
+				int value = str[i1].compareTo(str[j1]);
+				if (value > max) {
+					
+					max = value;
+					v1 = str[i1];
+					str[i1] = str[j1];
+					str[j1] = v1;
+				}
+			}
+		}
+		
+		String[] str1 = {"dimpal1","ana","chan11","chikoo1"};
+		Arrays.sort(str);
+		
+		String duplicate = "";
+		
+		System.out.println(Arrays.toString(str));
+		
+		// manually sorting 
+		
+		for (int i=0;i<str.length;i++) {
+			
+			for (int j=i+1;j<str1.length;j++) {
+				
+				if (str[i].equalsIgnoreCase(str1[j])) {
+					
+					duplicate = str[i];
+					break;
+				}
+			}
+		}
+		
+		System.out.println("duplicate : "+duplicate);
+	}
+
+}

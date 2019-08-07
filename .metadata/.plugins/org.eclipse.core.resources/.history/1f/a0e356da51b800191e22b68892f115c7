@@ -1,0 +1,71 @@
+package string;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class FunctionDel {
+	// 1. Get number of words in the paragraph. 
+	//Hint : Function signature may look like 
+	// Returns number of words in the paragraph 
+	//e.g. if input is “This is a simple sentence”, it will return 5.
+	// Paragraph = “This is a simple sentence”
+	//Int GetWordCount(String paragraph);
+
+	public static int getWordCount(String paragraph) {
+		String parts[] = paragraph.split("\\s");
+		return parts.length;
+	}
+
+	// 2. Get number of unique words of Paragraph = “This is a simple sentence”
+	public static int getUniqueWordsCount(String paragraph) {
+		String []parts = paragraph.split("\\s");
+		
+		Set<String> uniqueWords = new HashSet<String>();
+		
+		for (String s : parts) {
+			uniqueWords.add(s);
+			}
+		
+		return uniqueWords.size();
+	}
+	
+	// 3. Get all words of Paragraph = “This is a simple sentence”
+	public static String getAllWords(String paragraph) {
+		
+		String[] parts = paragraph.split("\\s");
+		return Arrays.toString(parts);
+	}
+	
+	
+	// 4. Get all unique words of Paragraph = “This is a simple sentence”
+	public static Set<String> getUniqueWords(String paragraph) {
+		String[] parts = paragraph.split("\\s");
+		Set<String> uniqueWords = new HashSet<String>();
+		for (String s : parts) {
+			uniqueWords.add(s);
+		}
+		
+		return uniqueWords;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String paragraph = "This is a simple sentence";
+		
+		// 1. Calling public static int getWordCount(String paragraph)
+		System.out.println("1. Get number of words in the paragraph.: "+getWordCount(paragraph));
+		
+		// 2. public static int getUniqueWords(String paragraph) 
+		System.out.println("Unique words in paragraph : "+getUniqueWordsCount(paragraph));
+		
+		// 3. getAllWords(String paragraph)
+		System.out.println(getAllWords(paragraph));
+		
+	}
+
+}

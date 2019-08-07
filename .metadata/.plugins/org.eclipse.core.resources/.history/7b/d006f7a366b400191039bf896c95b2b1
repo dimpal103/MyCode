@@ -1,0 +1,22 @@
+package constructor;
+
+public class Employee {
+
+	int empId;
+	String empName;
+	
+	// parametrize constructor with two arguments
+	public Employee(int a, String name) {
+		this.empId = a;
+		this.empName = name;
+	}
+	
+	public void printData() {
+		System.out.println("a : "+empId+", name : "+empName);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package constructor;
+
+public class Employee {
+
+	private int empId;
+	private String empName;
+	
+	// parametrize constructor with two arguments
+	public Employee(int a, String name) {
+		this.empId = a;
+		this.empName = name;
+	}
+	
+	public class abc extends Employee {
+	public void printData() {
+		System.out.println("Id : "+empId+", name : "+empName);
+	}
+	
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp = new Employee(1, "anamika");
+		Employee emp1 = new Employee(2, "dimpal");
+		
+		emp.printData();
+		emp1.printData();
+
+	}
+
+}

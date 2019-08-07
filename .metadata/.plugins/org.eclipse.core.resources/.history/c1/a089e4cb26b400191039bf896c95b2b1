@@ -1,0 +1,16 @@
+package string;
+
+public class ReturnFileExtension {
+	/*
+	 * Q : Write a function, which takes file_name as input and return file extension as output.
+           e.g. input  = “abc.txt”, output = “txt”;
+           input “C://ab/myfile.jpg”, output = “jpg”.
+
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,99 @@
+package string;
+
+import java.util.Arrays;
+
+public class DeleteString {
+	/*
+	 * Q : Write a function which extracts last 3 characters in the given string.
+           e.g. if input = “Anamika”, then output should be “ika”;
+           If input = “1234”, then output should be “234”.
+
+	 */
+	public static String getLast3Char(String str) {
+		return str.substring(str.length()-3);
+	}
+
+	/*
+	 * Q : Write a function, which takes file_name as input and return file extension as output.
+           e.g. input  = “abc.txt”, output = “txt”;
+           input “C://ab/myfile.jpg”, output = “jpg”.
+
+	 */
+	public static String getExtention(String str) {
+		char ch = '.';
+		int length = 0;
+		
+		for (int i=0;i<str.length();i++) {
+			if (str.charAt(i) == ch) {
+				length = i;
+				break;
+			}
+		}
+		return str.substring(length+1);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "";
+		System.out.println("String length : "+str.length());
+		
+		String name = "Anamika Kumari";
+		System.out.println("Length of Anamika Kumari : "+name.length());
+		System.out.println(name.substring(4, 6));
+		
+		// Function call
+		System.out.println("last 3 char of Anamika Kumari : "+getLast3Char(name));
+		
+		// Function call
+		String s = "abgdv.txt";
+		System.out.println(getExtention(s));
+		
+		// Q : What will be length of string “123  “ ?
+		String name1 = "123 ";
+		System.out.println("length of 123 : "+name1.length());
+		
+		// toUpperCase
+		String value = "dimpal";
+		System.out.println("To upper case of dimpal : "+value.toUpperCase());
+		
+		// Q : What will be value of toUpperCase of “dimpal.tarwan1” ?
+
+		String value1 = "dimpal.tarwan1";
+		System.out.println("dimpal.tarwan1 in toUpperCase : "+value1.toUpperCase());
+		
+		System.out.println(value1.substring(3));
+		
+		System.out.println(value1.contains("pal"));
+		
+		System.out.println(value1.contains(value));
+		
+		System.out.println(value.contains(value1));
+		
+		System.out.println(value.equals(value1));
+		
+		System.out.println(value.compareTo(value1));
+		
+		DeleteString ds = new DeleteString();
+		System.out.println(ds.getLast3Char(value));
+		
+		// split
+		String sr = "mukesh, 59, 90, 50";
+		String[] parts = sr.split(",");
+		System.out.println(Arrays.toString(parts));
+
+		//Q : Split “Anamika Kumari” using space.
+		//Q : Split “Mukesh 40 67 50” using space.
+		String an = "Anamika Kumari";
+		String[] parts1 = an.split("\\s");
+		System.out.println(Arrays.toString(parts1));
+		
+		String mk = "mukesh ana 90 78";
+		String[] parts2 = mk.split("\\s");
+		System.out.println(Arrays.toString(parts2));
+		
+		String tr = " anamika singh ";
+		System.out.println(tr);
+
+
+	}
+
+}

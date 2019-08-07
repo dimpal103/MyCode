@@ -1,0 +1,45 @@
+package string;
+
+import java.util.Arrays;
+
+public class DeleteString {
+	/*
+	 * Q : Write a function which extracts last 3 characters in the given string.
+           e.g. if input = “Anamika”, then output should be “ika”;
+           If input = “1234”, then output should be “234”.
+
+	 */
+	
+
+	/*
+	 * Q : Write a function, which takes file_name as input and return file extension as output.
+           e.g. input  = “abc.txt”, output = “txt”;
+           input “C://ab/myfile.jpg”, output = “jpg”.
+
+	 */
+	public static String getExtention(String str) {
+		
+		
+		
+		
+		
+		// Q : What will be length of string “123  “ ?
+		
+		// toUpperCase
+		
+		// Q : What will be value of toUpperCase of “dimpal.tarwan1” ?
+
+		
+		
+		
+
+		//Q : Split “Anamika Kumari” using space.
+		//Q : Split “Mukesh 40 67 50” using space.
+		
+		
+	}
+
+
+	}
+
+

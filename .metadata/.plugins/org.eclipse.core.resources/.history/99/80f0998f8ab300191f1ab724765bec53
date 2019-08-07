@@ -1,0 +1,17 @@
+package string_Bhaiya;
+
+public class StudentMarks {
+
+	private String name;
+	
+	public String getName() {
+		return name;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		StudentMarks sm = new StudentMarks();
+		System.out.println(sm.getName());
+	}
+
+}
