@@ -24,7 +24,7 @@ public class SortStringArrayDate8 {
 			}
 		}
 		
-		//jjjjjjjjjjjjjj
+		
 		
 		System.out.println("1st sorted : "+Arrays.toString(str));
 		

@@ -57,10 +57,17 @@ public class FunctionDel {
 	
 	// 5. Get most frequent word/words. of Paragraph = “This is a simple sentence”
 	
-	public static List<String> getFrequentWords(String paragraph) {
+	//String paragraph = "This is a simple sentance is";
+	
+	public static Map<String,Integer> getFrequentWords(String paragraph) {
+		
 		String[] parts = paragraph.split("\\s");
 		
-		List<String> words = new ArrayList<String>();
+		int count = 1;
+		
+		Map<String,Integer> mapValue = new LinkedHashMap<String, Integer>();
+		
+		String str = "";
 		
 		for(int i=0;i<parts.length;i++) {
 			
@@ -68,15 +75,20 @@ public class FunctionDel {
 				
 				if (parts[i].equals(parts[j])) {
 					
-					words.add(parts[i]);
+					int ii = count+1;
+					
+					str = parts[i];
+					
+					mapValue.put(str,ii);
 				}
+	
 			}
 			
 		}
-		return words;
+		return mapValue;
 	}
 	
-	// 5. Get most frequent word/words. of Paragraph = “This is a simple sentence”
+	// 5. Get most frequent wordsword/words. of Paragraph = “This is a simple sentence”
 	
 	public static Map<String, Integer> getFrequentWords1(String paragraph) {
 		
@@ -84,30 +96,28 @@ public class FunctionDel {
 		
 		Map<String, Integer> words = new LinkedHashMap<String, Integer>();
 		
-	   List<String> w1 = new ArrayList<String>();
-	   int count = 1;
+		Map<String, Integer> words1 = new LinkedHashMap<String, Integer>();
+		
+		int max = 0;
+		String str = "";
+		
+		List<String> wordList = new ArrayList<String>();
 		
 		for (int i=0;i<parts.length;i++) {
-					
-			w1.add(parts[i]);
-					
-				}
+			wordList.add(parts[i]);
+		}
+		
+		for (int j=0;j<wordList.size();j++) {
 			
-		for (int i=1;i<=w1.size()-1;i++) {
+			String name = wordList.get(j);
 			
-			
-			
-			for (int j=i+1;j<=w1.size()-1;j++) {
+			for (String s : words.keySet()) {
 				
+				int count = words.get(s);
 				
-				
-				if (w1.get(i).equals(w1.get(j))) {
-					
-					words.put(parts[i], count+1);
-				}
-				
-				
+				words.put(s, count);
 			}
+				
 		}
 		
 		return words;
@@ -116,7 +126,9 @@ public class FunctionDel {
 	public static void main(String[] args)throws ArrayIndexOutOfBoundsException {
 		// TODO Auto-generated method stub
 
-		String paragraph = "This is is this";
+		String paragraph = "This is a simple sentance is";
+		
+		//String p = "a h b a c d a j a";
 		
 		
 		// 1. (1. Get number of words in the paragraph.) public static int getWordCount(String paragraph)
@@ -135,11 +147,11 @@ public class FunctionDel {
 		
 		// 5. Get most frequent word/words. of Paragraph = “This is a simple sentence”
 		//public static List<String> getFrequentWords(String paragraph)
-		List<String> s1 = getFrequentWords(paragraph);
-		System.out.println("5. Get most frequent word/words. of Paragraph = “This is a simple is sentence” : "+s1);
+		//List<String> s1 = getFrequentWords(paragraph);
+		//System.out.println("5. Get most frequent word/words. of Paragraph = “This is a simple is sentence” : "+s1);
 		
 		// getFrequentWords1(String paragraph)
-		System.out.println(getFrequentWords1(paragraph));
+		System.out.println("\"5. Get most frequent word/words : "+getFrequentWords(paragraph));
 	}
 
 }
