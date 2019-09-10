@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\MyCode\learn\pom.xml"/>
+			<item value="E:\MyCode\SELENIUM_PRACTICE_Q\src\test\java\SELENIUM_PRACTICE_Q\SELENIUM_PRACTICE_Q\autoTextBox.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,14 +27,28 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="soni.a"/>
+			<item value="abc.learn"/>
+			<item value="new.cook"/>
+			<item value="SELENIUM_PRACTICE_Q.SELENIUM_PRACTICE_Q"/>
+			<item value="Cucumber.Bhaiya_code"/>
 			<item value="Cucumber.Cucumber"/>
 			<item value="FreeCRM.FreeCRM"/>
 		</list>
 		<list key="groupId">
+			<item value="soni"/>
+			<item value="abc"/>
+			<item value="new"/>
+			<item value="SELENIUM_PRACTICE_Q"/>
 			<item value="Cucumber"/>
 			<item value="FreeCRM"/>
 		</list>
 		<list key="artifactId">
+			<item value="a"/>
+			<item value="learn"/>
+			<item value="cook"/>
+			<item value="SELENIUM_PRACTICE_Q"/>
+			<item value="Bhaiya_code"/>
 			<item value="Cucumber"/>
 			<item value="FreeCRM"/>
 		</list>

@@ -1,6 +1,7 @@
 package interviewPractice;
 
 import java.util.Arrays;
+import interviewPractice.StaticData;
 
 public class BinarySearch {
 	
@@ -46,6 +47,12 @@ public class BinarySearch {
             System.out.println("Element not present"); 
         else
             System.out.println("Element found at index " + result+" And element is : "+arr[result]); 
+        
+        
+        
+        StaticData sd = new StaticData();
+        System.out.println(sd.getCollegeName());
+        
     } 
 		
 
